@@ -4,10 +4,13 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
+import lombok.Getter;
+import lombok.Setter;
 
 @Configuration
 @ConfigurationProperties("spring.datasource")
 @Getter
+@Setter
 public class DBconfiguration {
     private String driverClassName;
     private String url;
@@ -24,6 +27,7 @@ public class DBconfiguration {
     };
 
     @Profile("prod")
+    @Bean
     public String productionDatabaseConnection(){
         System.out.println("DB connection for Production - MySQL");
         System.out.println(driverClassName);

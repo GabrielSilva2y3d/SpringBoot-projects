@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootconfigApplication<springbootconfig>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.digitalinnovationone.springbootconfig.SpringbootconfigApplication",
+            "projectName": "springbootconfig",
+            "args": ""
+        }
+    ]
+}
